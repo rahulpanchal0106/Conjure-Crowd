@@ -58,37 +58,7 @@
   .h1:hover {
     animation: rainbow-text-animation 0.5s ease forwards;
   }
-  @keyframes rainbow-text-animation {
-    0% {
-      background-size: 57%;
-      background-position: 0 0;
-    }
-    20% {
-      background-size: 57%;
-      background-position: 0 1em;
-    }
-    100% {
-      background-size: 300%;
-      background-position: -10em 1em;
-    }
-  }
-  
-  /* Move the background and make it smaller. */
-  /* Animation shown when entering the page and after the hover animation. */
-  @keyframes rainbow-text-animation-rev {
-    0% {
-      background-size: 300%;
-      background-position: -9em 1em;
-    }
-    20% {
-      background-size: 57%;
-      background-position: 0 1em;
-    }
-    100% {
-      background-size: 57%;
-      background-position: 0 0;
-    }
-  }
+
   nav ul {
     display: flex;
     list-style: none;
@@ -265,4 +235,32 @@ nav ul:hover {
     font-size: 1rem;
     margin-top: 10px;
   }
-  
+  @keyframes rainbow-text-animation {
+    0% {
+      background-size: 57%;
+      background-position: 0 0;
+    }
+    20% {
+      background-size: 57%;
+      background-position: 0 1em;
+    }
+    100% {
+      background-size: 300%;
+      background-position: -10em 1em;
+    }
+  }
+
+  @keyframes rainbow-text-animation-rev {
+    0% {
+      background-size: 300%;
+      background-position: -9em 1em;
+    }
+    20% {
+      background-size: 57%;
+      background-position: 0 1em;
+    }
+    100% {
+      background-size: 57%;
+      background-position: 0 0;
+    }
+  }

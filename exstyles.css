@@ -10,6 +10,33 @@ body {
   background-color: #121212;
 }
 
+.h1{
+  background: #fe6d73;
+  background-color: #fe6d73;
+  background: conic-gradient(
+    #fe6d73 16.666%, 
+    #fe6d73 16.666%, 
+    #E16541 33.333%, 
+    #c56e2c 33.333%, 
+    #F18F43 50%, 
+    #1b2932 50%, 
+    #193649 66.666%, 
+    #183165 66.666%, 
+    #243e77 83.333%, 
+    #A7489B 83.333%);
+  background-size: 57%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+
+  animation: rainbow-text-animation-rev 0.5s ease forwards;
+
+  cursor: pointer;
+}
+.h1:hover {
+  animation: rainbow-text-animation 0.5s ease forwards;
+}
+
 
 header {
   display: flex;
@@ -61,7 +88,7 @@ nav
   0 22.3px 17.9px rgba(0, 0, 0, 0.08),
   0 100px 80px rgba(0, 0, 0, 0.04);
   overflow: hidden;
-  color: #fff;
+  color: #000000;
 }
 
 nav ul
@@ -179,3 +206,33 @@ border-bottom-right-radius: 3px;
     margin-bottom: 0;
   }
   
+
+  @keyframes rainbow-text-animation {
+    0% {
+      background-size: 57%;
+      background-position: 0 0;
+    }
+    20% {
+      background-size: 57%;
+      background-position: 0 1em;
+    }
+    100% {
+      background-size: 300%;
+      background-position: -10em 1em;
+    }
+  }
+  
+  @keyframes rainbow-text-animation-rev {
+    0% {
+      background-size: 300%;
+      background-position: -9em 1em;
+    }
+    20% {
+      background-size: 57%;
+      background-position: 0 1em;
+    }
+    100% {
+      background-size: 57%;
+      background-position: 0 0;
+    }
+  }

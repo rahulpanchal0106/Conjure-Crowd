@@ -51,7 +51,7 @@ header {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
 
    
   font-family: 'Dancing Script','Cursive';
@@ -67,7 +67,7 @@ nav li:not(:last-child) {
 }
 
 nav a {
-  color: #fff;
+  color: #fe6d73;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.2rem;
@@ -117,7 +117,7 @@ nav ul li a
 nav ul li a i
 {
 
-  color: #fff;
+  color: #fe6d73;
   width: 100%;
   height: 100%;
   opacity: 0.4;

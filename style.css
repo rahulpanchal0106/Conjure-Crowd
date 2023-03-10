@@ -264,3 +264,6 @@ nav ul:hover {
       background-position: 0 0;
     }
   }
+  footer p{
+    text-align: center;
+  }

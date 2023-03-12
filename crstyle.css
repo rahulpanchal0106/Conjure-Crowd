@@ -194,7 +194,24 @@ body{
   h2{
     font-size: 2.5rem;
   }
-  
+  input[type="file"]::-webkit-file-upload-button {
+    width: 100%;
+    border: 1px rgb(92, 92, 92) solid;
+    height: 40px;
+    background-color: #1e1e1e40;
+    backdrop-filter: blur(12px);
+    padding: 2%;
+    color: rgba(209, 209, 209, 0.545);
+    transition: all 0.4s ease;
+    border-radius: 5px;
+    font-family: caveat;
+    font-size: 1.3rem;
+  }
+  input[type="file"]::-webkit-file-upload-button:hover{
+    color: white;
+    background-color:#00000066;
+    border: 1px white solid;
+  }
   input[type="text"],
   textarea,
   select {
